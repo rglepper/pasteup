@@ -44,7 +44,6 @@ define(function () {
 
             if (start_time && end_time) {
                 total_time = end_time - start_time;
-                console.log(total_time);
             }
         }
 
@@ -59,10 +58,10 @@ define(function () {
         var speed = "high";
 
         if (load_time) {
-            if (load_time > 500) { // Half a second between
-                speed = "medium";
-                if (load_time > 1000) {
-                    speed = "low";
+            if (load_time > 1000) { // One second
+                speed = 'medium';
+                if (load_time > 4000) { // Four seconds
+                    speed = 'low';
                 }
             }
         }

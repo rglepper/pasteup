@@ -2,3 +2,10 @@
 .layout-3 {
 	display: none;
 }
+
+.responsive-image {
+	width:80%;
+}
+.responsive-image img {
+	width: 100%;
+}
