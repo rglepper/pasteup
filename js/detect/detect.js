@@ -10,7 +10,7 @@ define(function () {
         MEDIAN_WIDTH = 640;
     
     function getLayoutMode() {
-        width = window.innerWidth;
+        var width = window.innerWidth;
 
         var mode = "base";
         if (width > BASE_WIDTH) {
