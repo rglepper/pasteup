@@ -3,6 +3,7 @@
     Description: Used to detect various characteristics of the current browsing environment.
                  layout mode, connection speed, battery level, etc...
 */
+/*jshint strict: false */
 
 define(function () {
 
