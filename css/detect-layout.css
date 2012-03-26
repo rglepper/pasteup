@@ -1,0 +1,16 @@
+.layout-1,
+.layout-3 {
+	display: none;
+}
+.layout-2 {
+	display: block;
+}
+
+@media (min-width:640px) {
+	.layout-2 {
+		display: none;
+	}
+	.layout-3 {
+		display: block;
+	}
+}

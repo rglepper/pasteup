@@ -15,11 +15,14 @@
 
         <!-- Include core base and module styles -->
         <link rel="stylesheet" type="text/css" href="/css/core.pasteup.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/detect-core.css" />
 
         <!-- Add layout styles for browsers over 50em or less than IE9, but not IE mobile or IE6. -->
-        <link rel="stylesheet" media="all and (min-width: 50em)" type="text/css" href="/css/layout.pasteup.min.css" />
+        <link rel="stylesheet" media="all and (min-width: 320px)" type="text/css" href="/css/layout.pasteup.min.css" />
+        <link rel="stylesheet" media="all and (min-width: 320px)" type="text/css" href="/css/detect-layout.css" />
         <!--[if (lt IE 9) & (!IEMobile) & (gt IE6)]>
             <link rel="stylesheet" type="text/css" href="/css/layout.pasteup.min.css" />
+            <link rel="stylesheet" type="text/css" href="/css/detect-layout.css" />
         <![endif]-->
 
         <!-- Load main.js via requirejs --> 
@@ -29,8 +32,15 @@
 
     <body>
         <dl class="detect">
-            <dt>Layout Mode</dt>
+            <dt>Layout detected in JS</dt>
             <dd data-feature="layout">Testing</dd>
+
+            <dt class="layout-1">Layout detected in media query</dt>
+            <dd class="layout-1">Base</dd>
+            <dt class="layout-2">Layout detected in media query</dt>
+            <dd class="layout-2">Median</dd>
+            <dt class="layout-3">Layout detected in media query</dt>
+            <dd class="layout-3">Extended</dd>
 
             <dt>Connection speed</dt>
             <dd data-feature="bandwidth">Testing</dd>
@@ -40,6 +50,8 @@
 
             <dt>Retina display</dt>
             <dd data-feature="retina">Testing</dd>
+
+            <dt>
         </dl>
     </body>
 </html>
