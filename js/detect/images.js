@@ -4,7 +4,7 @@
 */
 /*jshint strict: false */
 
-define(['./detect'], function (detect) {
+define(['../detect/detect.js'], function (detect) {
 
     function upgrade() {
         if (detect.getConnectionSpeed() !== 'low') {

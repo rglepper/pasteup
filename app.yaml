@@ -1,0 +1,23 @@
+application: gu-pasteup
+version: 6
+runtime: python
+api_version: 1
+
+default_expiration: "5m"
+
+handlers:
+
+- url: /content
+  static_dir: content
+
+- url: /css
+  static_dir: css
+
+- url: /docs
+  static_dir: docs
+
+- url: /js
+  static_dir: js
+
+- url: /less
+  static_dir: less
